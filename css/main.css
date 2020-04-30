@@ -972,7 +972,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	right: 0;
 	top: -3.6rem;
 	display: block;
-	font-family: "poppins-regular", sans-serif;
+	font-family: "poppins-regular", sans-serif !important;
 	color: white;
 	font-size: 1.1rem;
 	line-height: 1;

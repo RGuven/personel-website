@@ -17,9 +17,31 @@
 
  	<!-- CSS
    ================================================== -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css">
+   <style>
+	.my:hover{
+	 color:red !important;
+	 text-decoration: none;
+	 font-size: 30px;
+	 transition: ease-in-out .9s;
+	}
+	.normallyhidden{
+		visibility: hidden;
+		display: none;
+	}
+	@media screen and (max-width: 600px) {
+		
+		.mobile {
+		  
+			visibility: hidden;
+			display: none;
+		}
+		
+	  }
+	</style>     
 
    <!-- script
    ================================================== -->   
@@ -36,7 +58,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="shortcut icon" href="https://bonn0062.github.io/portfolio_ab/favicon.ico">
+	
 	
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">	
 </head>
@@ -59,11 +81,12 @@
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
 						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-						<li><a href="projects.html" title="">Projects</a></li>		
+						<li><a class="smoothscroll"  href="#resume" title="">Experience</a></li>
+						<li><a href="electronic.html" title="">Electronic Blog</a></li>	
+						<li><a href="programming.html" title="">Programming Blog</a></li>
+						<li><a href="computer_vision.html" title="">Computer Vision Blog</a></li>	
+						<li><a href="blog.html" title="">Rguven Blog</a></li>	
+								
 										
 					</ul>
 				</nav>    		
@@ -71,20 +94,53 @@
    		
    	</div> <!-- /row --> 		
    </header> <!-- /header -->
+ 
 
 	<!-- intro section
    ================================================== -->
-   <section id="intro">   
+   <section id="intro"> 
 
-   	<div class="intro-overlay"></div>	
+
+	<div class="intro-overlay"></div>
+
 
    	<div class="intro-content">
+		
    		<div class="row">
 
-   			<div class="col-twelve">
+   			<div class="col-twelve" style="margin-bottom:150px;">
+				<p class="intro-position">
+					<nav class="navbar navbar-expand-lg navbar-primary mobile">
+						<a class="intro-position my" style="color:white;margin-left:150px;font-family: cursive;font-weight:bold;" href="electronic.html">Electronic</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+						  <ul class="navbar-nav">
+							<li class="nav-item active">
+							  <a class="intro-position my" style="color:white;margin-left:70px;font-family: cursive; font-weight:bold;" href="programming.html">Programming <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+							  <a class="intro-position my" style="color:white;margin-left:70px;font-family: cursive;font-weight:bold;" href="computer_vision.html">Computer Vision</a>
+							</li>
+							<li class="nav-item">
+							  <a class="intro-position my" style="color:white;margin-left:70px;font-family: cursive;font-weight:bold;" href="blog.html">Blog</a>
+							</li>
+						  </ul>
+						</div>
+					  </nav>
+				</p>
+
+				<div class="intro-position normallyhidden">
+					
+					<a class="intro-position my" style="color:white;margin-left:150px;font-family: cursive;font-weight:bold;" href="electronic.html">Electronic</a><br>
+					<a class="intro-position my" style="color:white;margin-left:150px;font-family: cursive;font-weight:bold;" href="programming.html">Programming</a><br>
+					<a class="intro-position my" style="color:white;margin-left:150px;font-family: cursive;font-weight:bold;" href="computer_vision.html">Computer Vision</a><br>
+					<a class="intro-position my" style="color:white;margin-left:150px;font-family: cursive;font-weight:bold;" href="blog.html">Blog</a>
+				</div>
 
 	   			
-	   			<h1>Ramazan Güven</h1>
+	   			<h1 style="margin-top:200px">Ramazan Güven</h1>
 
 	   			<p class="intro-position">
 	   				<span>Computer Vision</span>
@@ -92,7 +148,7 @@
 	   				<span>Machine Learning</span> 
 	   			</p>
 
-	   			<a class="button stroke smoothscroll" href="#about" title="">Daha Fazla</a>
+	   			<a class="button stroke smoothscroll" href="#about" title="">About More</a>
 				 
 
 	   		</div>  
@@ -118,14 +174,14 @@
    	<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Hakkımda</h5>
+   			<h5>About Me </h5>
    			
 
-   			<div class="intro-info">
+   			<div class="intro-info" style="padding-left:100px;">
 
    				<img src="images/fotom.jpeg">
 
-   				<p class="lead"> Elektrik Elektronik Mühendisliği öğrenisiyim ve aynı zamanda part time çalışarak kendimi geliştirmeye çalışıyorum. <br><br> Python, PyTorch ,Tensorflow , Keras, OpenCV, NumPy, Pandas, Matplotlib, Scikit-Learn, Deep Learning, Neural Networks, Computer Vision,Git hakkında konuşmaktan zevk alırım.<br>Bazen Flask/Html5/Css3 konuşmak hoşuma gider.<br>Bazen de Elektronik Kart Tasarımı,C programlama ...</p>
+   				<p class="lead" style="width:750px;"> I will write about me later <br><br> Python, PyTorch ,Tensorflow , Keras, OpenCV, NumPy, Pandas, Matplotlib, Scikit-Learn, Deep Learning, Neural Networks, Computer Vision,Git hakkında konuşmaktan zevk alırım.<br>Bazen Flask/Html5/Css3 konuşmak hoşuma gider.<br>Bazen de Elektronik Kart Tasarımı,C programlama ...</p>
    			</div>   			
 
    		</div>   		
@@ -135,7 +191,7 @@
 
    		<div class="col-six tab-full">
 
-   			<h3>Profil</h3>
+   			<h3>Profile</h3>
    			<p></p>
 
    			<ul class="info-list">
@@ -149,7 +205,7 @@
    				</li>
    				<li>
    					<strong>Website:</strong>
-						<span><a href="https://bonn0062.github.io/ab_portfolio/">RGuven</span></a>
+						<span><a href="https://rguven.github.io/personel-website/">RGuven</span></a>
    				</li>
    				<li>
    					<strong>Email:</strong></a>
@@ -166,24 +222,25 @@
    			<p></p>
 
 				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>Genellikle</span></div>
-				   	<strong>Python, OpenCV, Numpy</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>Severim</span></div>
-				   	<strong>PyTorch, Tensorflow</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent50"><span>Ara Sıra</span></div>
-				   	<strong>Scikit-Learn</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent45"><span>Bazen</span></div>
-				   	<strong>Matplotlib</strong>
-				   </li>
-      
-				</ul> <!-- /skill-bars -->		
+					<li>
+						<div class="progress percent90"><span>My Life</span></div>
+						<strong>Python, OpenCV, Numpy</strong>
+						
+					</li>
+					<li>
+						<div class="progress percent75"><span>I Like</span></div>
+						<strong>PyTorch, Tensorflow</strong>
+					</li>
+					<li>
+						<div class="progress percent50"><span>Interest</span></div>
+						<strong>Electronic</strong>
+					</li>
+					<li>
+						<div class="progress percent45"><span>Interest</span></div>
+						<strong>Web Programming</strong>
+					</li>
+	
+				</ul> <!-- /skill-bars -->	
 
    		</div>
 
@@ -191,7 +248,7 @@
 
    	<div class="row button-section">
    		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Daha Fazla</a>
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">About More</a>
    		</div>   		
    	</div>
 
@@ -239,7 +296,7 @@
 
    		<div class="col-twelve resume-header">
 
-   			<h2>Deneyimler</h2>
+   			<h2>Experiences</h2>
 
    		</div> <!-- /resume-header -->
 
@@ -298,7 +355,7 @@
 
    		<div class="col-twelve resume-header">
 
-   			<h2>Eğitim</h2>
+   			<h2>Education</h2>
 
    		</div> <!-- /resume-header -->
 
@@ -336,7 +393,7 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Sertifikalar</h3>
+	   					<h3>Sertifications</h3>
 	   					
 	   				</div>
 
@@ -354,7 +411,7 @@
 					</div>
 
 					<div class="timeline-header">
-						<h3>Sertifikalar</h3>
+						<h3>Sertifications</h3>
 						
 					</div>
 
@@ -372,14 +429,14 @@
 	   				</div>
 
 	   				<div class="timeline-header">
-	   					<h3>Lisans</h3>
-	   					<p>Halen</p>
+	   					<h3>Bachelor of Science</h3>
+	   					<p>Still</p>
 					</div>
 					   
 
 	   				<div class="timeline-content">
-	   					<h4>Uludağ Üniversitesi</h4>
-	   					<p>Elektrik Elektronik Mühendisliği</p>
+	   					<h4>Uludag University</h4>
+	   					<p>Electric and Electronic Engineering</p>
 	   				</div>
 
 	   			</div> <!-- /timeline-block -->
@@ -408,11 +465,18 @@
 
    <footer>
 		
-		<div class="intro-content" style="padding-left:600px;padding-bottom:150px;">
+		<div class="intro-content col-lg-12" style="margin-bottom: 100px;" >
 			<h1>Ramazan Güven</h1>
 		</div>
 	
 		<div class="row">
+					 <div class="col-six tab-full">
+			 <div class="copyright">
+				   <span>© Copyright anneb 2018. Github hesabı--> bonn0062</span> 
+				   <span><a href="http://www.styleshout.com/"></a></span>	         	
+				</div>		                  
+			</div>
+
 
 			<div class="col-six tab-full pull-right social">
 
@@ -425,18 +489,12 @@
 				 
 		 </div>
 
-		 <div class="col-six tab-full">
-			 <div class="copyright">
-				   <span>© Copyright anneb 2018. Github hesabı--> bonn0062</span> 
-				   <span><a href="http://www.styleshout.com/"></a></span>	         	
-				</div>		                  
-			 </div>
 
 			 <div id="go-top">
 				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
 			 </div>
 
-		 </div> <!-- /row -->     	
+		</div> <!-- /row -->     	
   </footer>  
 
   <div id="preloader"> 
@@ -445,6 +503,12 @@
 
   <!-- Java Script
   ================================================== --> 
+ 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+ 
   <script src="js/jquery-2.1.3.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
